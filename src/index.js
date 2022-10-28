@@ -1,18 +1,18 @@
 import './style.css';
 
-function createHeader() {
-    const header = document.createElement("header");
-    header.setAttribute('id', 'header');
+// function createHeader() {
+//     const header = document.createElement("header");
+//     header.setAttribute('id', 'header');
 
-    const restaurantName = document.createElement("h1");
-    restaurantName.classList.add("restaurant-name");
-    restaurantName.textContent = "Whatever";
+//     const restaurantName = document.createElement("h1");
+//     restaurantName.classList.add("restaurant-name");
+//     restaurantName.textContent = "Whatever";
 
-    header.appendChild(restaurantName);
-    header.appendChild(createNav());
+//     header.appendChild(restaurantName);
+//     header.appendChild(createNav());
     
-    return header;
-}
+//     return header;
+// }
 
 function createNav() {
     const nav = document.createElement('nav');
@@ -60,7 +60,7 @@ function createWebpage() {
     const webpage = document.createElement('div');
     webpage.setAttribute('id', 'container');
 
-    webpage.appendChild(createHeader());
+    webpage.appendChild(createNav());
     webpage.appendChild(createMain());
     webpage.appendChild(createFooter());
 
